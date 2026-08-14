@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clover// disc exchange — ร้านแผ่นเกม PS5</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="disc"></span>Clover<small>//DISC EXCHANGE</small></a>
+    <div class="navlinks">
+      <a href="index.html" class="active">หน้าแรก</a>
+      <a href="products.html">สินค้าทั้งหมด</a>
+      <a href="checkout.html" class="cart-pill">🛒 ตะกร้า <span class="n" id="cartCount">0</span></a>
+    </div>
+  </div>
+</nav>
+
+<header class="wrap hero">
+  <div class="hero-deco hero-deco-1" aria-hidden="true"></div>
+  <div class="hero-deco hero-deco-2" aria-hidden="true"></div>
+  <div class="hero-copy">
+    <div class="eyebrow">แผ่นเกม PS5 มือหนึ่ง &amp; มือสอง</div>
+    <h1>ทุกแผ่นบนชั้น<br>คือของจริง</h1>
+    <p class="lede">เลือกแนวเกมที่ใช่ ระบบจะกรองให้อัตโนมัติจากคลังสินค้าที่มีอยู่จริง — ไม่มีของหมดโผล่มาหลอกให้กดสั่ง</p>
+    <div class="hero-actions">
+      <a href="products.html" class="btn btn-primary">ดูสินค้าทั้งหมด →</a>
+      <a href="#recommend" class="btn btn-ghost">แนะนำเกมให้หน่อย</a>
+    </div>
+  </div>
+  <div class="hero-carousel-wrap">
+    <button class="car-btn car-prev" id="carPrev" aria-label="เลื่อนดูรายการก่อนหน้า">‹</button>
+    <div class="hero-carousel" id="heroCarousel" aria-label="แผ่นเกมแนะนำ เลื่อนดูได้"></div>
+    <button class="car-btn car-next" id="carNext" aria-label="เลื่อนดูรายการถัดไป">›</button>
+  </div>
+</header>
+
+<section class="wrap section" id="recommend">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">เลือกแนวที่สนใจ</div>
+      <h2>อยากได้เกมแนวไหน?</h2>
+    </div>
+  </div>
+
+  <div class="genre-row" id="genreRow"></div>
+
+  <div class="rec-panel">
+    <span class="tag" id="recTag">ALL</span>
+    <p id="recText">เลือกแนวเกมด้านบน ระบบจะแนะนำแผ่นที่มีของในสต็อกให้ทันที</p>
+  </div>
+</section>
+
+<section class="wrap section">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow" id="pickEyebrow">มาใหม่ทุกสัปดาห์</div>
+      <h2 id="pickHeading">แผ่นแนะนำ</h2>
+    </div>
+    <a href="products.html" class="btn btn-ghost">ดูทั้งหมด</a>
+  </div>
+  <div class="grid" id="pickGrid"></div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Clover// disc exchange — โปรเจกต์เดี่ยว วิชาแนวคิดคณิตศาสตร์ดิสครีต</span>
+    <span>ร้านสมมติเพื่อการศึกษา ไม่มีการจำหน่ายจริง</span>
+  </div>
+</footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/ui.js"></script>
+<script src="assets/home.js"></script>
+</body>
+</html>

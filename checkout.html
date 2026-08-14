@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ตะกร้าสินค้า — Clover// disc exchange</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="disc"></span>Clover<small>//DISC EXCHANGE</small></a>
+    <div class="navlinks">
+      <a href="index.html">หน้าแรก</a>
+      <a href="products.html">สินค้าทั้งหมด</a>
+      <a href="checkout.html" class="cart-pill active">🛒 ตะกร้า <span class="n" id="cartCount">0</span></a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap checkout-layout">
+  <main>
+    <div class="eyebrow">สรุปคำสั่งซื้อ</div>
+    <h2 style="margin-bottom:22px;">ตะกร้าของคุณ</h2>
+    <div class="cart-list" id="cartList"></div>
+
+    <section class="also-like" id="alsoLikeSection">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">แนะนำเพิ่มเติม</div>
+          <h3 style="font-family:var(--display); font-size:22px;">คุณอาจสนใจ</h3>
+        </div>
+      </div>
+      <div class="mini-cards" id="alsoLikeGrid"></div>
+    </section>
+  </main>
+
+  <aside class="receipt">
+    <h3>ใบเสร็จ</h3>
+
+    <label class="member-toggle">
+      <input type="checkbox" id="isMember">
+      เป็นสมาชิก Clover (รับส่วนลดสมาชิก)
+    </label>
+
+    <div class="receipt-row"><span>ยอดรวมสินค้า</span><span id="rSubtotal">0 บาท</span></div>
+    <div class="receipt-row"><span>ส่วนลดซื้อ 3 ชิ้นขึ้นไป (10%)</span><span id="rQtyDisc">− 0 บาท</span></div>
+    <div class="receipt-row"><span>ส่วนลดผสมแนวเกม ≥2 แนว</span><span id="rMixDisc">− 0 บาท</span></div>
+    <div class="receipt-row"><span>ส่วนลดสมาชิก</span><span id="rMemberDisc">− 0 บาท</span></div>
+    <div class="receipt-row"><span>ค่าจัดส่ง</span><span id="rShipping">0 บาท</span></div>
+    <div class="receipt-row total"><span>ยอดสุทธิ</span><span id="rTotal">0 บาท</span></div>
+
+    <div id="promoNote"></div>
+
+    <button class="btn btn-primary" style="width:100%; justify-content:center;" id="placeOrderBtn">ยืนยันคำสั่งซื้อ</button>
+  </aside>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Clover// disc exchange — โปรเจกต์เดี่ยว วิชาแนวคิดคณิตศาสตร์ดิสครีต</span>
+    <span>ร้านสมมติเพื่อการศึกษา ไม่มีการจำหน่ายจริง</span>
+  </div>
+</footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/ui.js"></script>
+<script src="assets/checkout.js"></script>
+</body>
+</html>
